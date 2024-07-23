@@ -1,0 +1,126 @@
+/* Reset some basic elements for consistent styling */
+body, h1, h2, p, ul, li, form, input, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+header.main-header {
+    background-color: #5f61d3;
+    color: #fff;
+    padding: 10px 20px;
+}
+
+header.main-header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+header.main-header nav ul li {
+    margin-right: 20px;
+}
+
+header.main-header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+header.main-header nav ul li a.active {
+    text-decoration: underline;
+    color: greenyellow;
+}
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-control {
+    margin-bottom: 15px;
+}
+
+.form-control label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-control input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button.btn {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #5cb85c;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button.btn:hover {
+    background-color: #4cae4c;
+}
+
+/* Additional styling for product items */
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card.product-item {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    min-width: 300px;
+}
+
+.card__header h1 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.card__image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.card__content h2 {
+    color: #5cb85c;
+    margin-bottom: 10px;
+}
+
+.card__actions {
+    text-align: right;
+}
+
+.card__actions button {
+    background-color: #007bff;
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.card__actions button:hover {
+    background-color: #0056b3;
+}
